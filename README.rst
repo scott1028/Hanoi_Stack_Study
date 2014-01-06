@@ -58,3 +58,15 @@
                 }
             }
 
+        這個演算法由兩個部分組成：
+            1. 把 n 個盤子從 (a 透過暫存器 b 移動到 c )
+                => move(n,a,b,c)
+
+            2. 當只有一個盤子的時候直接從 a 移動到 c 即可
+                => console.log( 'from '+a.toString()+' move to '+b.toString() );
+
+                that's do(1)(n-1,a,b,c)
+                then   do(2)
+                then   do(1)(n-1,b,a,c)
+
+                完成！
