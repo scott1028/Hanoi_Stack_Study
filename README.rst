@@ -17,22 +17,26 @@
 
             2 塔的時候即：
 
-                source to temp(1塔的演算法)
+                source to temp (1塔的演算法, 從 source to temp))
                     ...
                 source to dest
                     ...
-                temp to dest
+                temp to dest (1塔演算法, 從 temp to dest)
 
             3 塔的時候即：
 
-                source to temp(2塔演算法)
+                source to temp (2塔演算法, 從 source to temp))
                     ...
                 source to dest
                     ...
-                temp to dest
+                temp to dest (2塔演算法, 從 temp to dest)
 
             4~n 塔的時候同理。
-                ...
+                source to temp (3塔演算法, 從 source to temp)
+                    ...
+                source to dest
+                    ...
+                temp to dest (3塔演算法, 從 temp to dest)
 
         就可以推算出演算法：
 
